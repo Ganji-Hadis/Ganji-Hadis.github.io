@@ -11,9 +11,114 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
+	<!-- <noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+	</noscript> -->
+
+	<!-- <meta charset="UTF-8"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<!-- <title>Horizantal scorll bar</title> -->
+	<!-- <link rel="icon" href="2.jpeg"> -->
+	<style>
+		* {
+			margin: -100px;
+			padding: 0px;
+			box-sizing: border-box;
+			/*background-color: rgb(255, 255, 255); */
+		}
+
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 100%;
+		}
+
+		.main-scroll-div {
+			width: 55%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			/* border: 2px solid red; */
+		}
+
+		.cover {
+			position: relative;
+			width: 154%;
+			height: 0%;
+		}
+
+		.cover::before {
+			position: absolute;
+			content: "";
+			left: 0;
+			top: 0;
+			z-index: 99;
+			height: 0%;
+			width: 0px;
+			background-image: linear-gradient(90deg, rgb(253, 253, 253), transparent);
+		}
+
+		.cover::after {
+			position: absolute;
+			content: "";
+			right: 0;
+			top: 0;
+			z-index: 99;
+			height: 0%;
+			width: 0px; 
+			/* 100 , 180 */
+			background-image: linear-gradient(-90deg, rgb(255, 255, 255), transparent);
+		}
+
+		.scroll-images {
+			width: 100%;
+			height: auto;
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			overflow: auto;
+			position: relative;
+			scroll-behavior: smooth;
+		}
+
+		.child {
+			min-width: 400px;
+			height: 400px;
+			margin: 1px 10px;
+			cursor: pointer;
+			border: 1px solid rgba(207, 201, 201, .3);
+			overflow: hidden;
+		}
+
+		.scroll-images::-webkit-scrollbar {
+			-webkit-appearance: none;
+		}
+
+		.child-img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.icon {
+			color: rgb(153, 41, 147);
+			size: 5px 10px;
+			background-color: rgba(36, 0, 0, 0);
+			font-size: 20px;
+			outline: none;
+			border: none;
+			padding: opx 1px;
+			cursor: pointer;
+		}
+
+		.icon:hover {
+			color: yellow;
+		}
+	</style>
 </head>
 
 <body class="is-preload">
@@ -24,7 +129,7 @@
 		<!-- Header -->
 		<header id="header">
 			<br>
-			<h1>Work Project's Full<br> Description and Images</h1><br><br><br>
+			<h1>Work Project's Full</h1> <h1>Description and Images</h1><br><br><br>
 			<!-- <p>Full Autobiography</p> -->
 		</header>
 
@@ -33,170 +138,61 @@
 
 			<!-- Content -->
 			<section id="content" class="main">
-				<span class="image main"><img src="images/Capture3.PNG" alt="" /></span>
-				<!-- <h2>Before University</h2>
-				<p>I was Born in 1999 in Khomin, Markazi Province, Iran. I had the opportunity to showcase my
-					exceptional
-					talents during high school by successfully passing the entrance exam of the <strong>National Organization
-					for Development of Exceptional Talents</strong> (commonly known as SAMPAD). As a result, I earned my math and
-					physics diploma from this
-					distinguished institution, achieving an impressive score of 17.20 out of 20. Subsequently, I
-					successfully passed the entrance exam for the <a href="https://ui.ac.ir/EN">University of
-						Isfahan.</a>, one of Iran's prestigious state-funded
-					universities, where I pursued my studies in the field of computer engineering.
-				</p>
-
-
-				<h2>My Bachelor's Journey</h2>
-				<p>During the process of selecting my university field, I lacked a clear and accurate understanding of
-					the available options. Consequently, I made a decision based on an incomplete view of the fields and
-					the job market prospects after graduation, leading me to choose computer engineering. However, upon
-					entering the university, I didn't feel a strong interest in this field, and I found myself grappling
-					with confusion about my true passions.It was not until I discovered the specialization of computer
-					architecture that I finally found my
-					genuine interest and enthusiasm. From that point on, everything changed. I became deeply engaged and
-					motivated, which resulted in achieving exceptional grades in all the specialized courses related to
-					this field.</p>
-
-				<h2>Other Interests and Hobbies</h2>
-				<p>From my earliest memories, I have been encouraged by the continuous support of my parents to engage
-					in various non-academic activities, which allowed me to lead a well-rounded life alongside my
-					studies. Among these activities, art played an important role, and I thoroughly enjoyed attending
-					classes on oil painting and calligraphy. Additionally, I also explored my interests in sports,
-					participating in classes for karate, swimming, and volleyball.<br>I initially started with swimming, and as I delved into the sport, I found a genuine interest in it.
-					Later, I decided to pursue volleyball more seriously. These choices brought about several
-					achievements at the provincial, national, and collegiate levels in both sports. These experiences
-					have positively impacted my life, instilling qualities like discipline, perseverance, and a drive
-					for excellence that have shaped my character and approach to challenges.</p> -->
+				<span class="image main"><img src="images/Capture4.PNG" alt="" /></span>
+				
 				<ul>
-					<li style="text-align: left;"><b>Sitting Position and Energy Management Device: An
-							Arduino-based Solution for Improved Health and Sustainable Electricity
-							Consumption<i>(Final Thesis)</i></b>
-						<p><b>Details: </b> In this final bachelor's thesis project, we utilized an Arduino board along
-							with ultrasonic sensors, a temperature sensor, a lamp, relay, and LEDs to improve the user's
-							reading and sitting environment. By detecting the user's position with ultrasonic sensors,
-							we prompted them to correct their posture by automatically turning off the lamp using the
-							relay. Moreover, we incorporated a temperature sensor to monitor the environment, and if it
-							became too hot or too cold, we alerted the user through the LEDs. This innovative system
-							provided a comfortable and conducive environment for reading and sitting, enhancing the
-							overall user experience effectively.
+					<li style="text-align: left;"><b>Designing a board to support Power on Ethernet (PoE) for setting
+							up surveillance cameras and providing information about the product's operational
+							status.</b>
+						<p><b>Details: </b>In this project, we begin by receiving power and network data through a
+							network socket (WAN port). Subsequently, we carefully separate these inputs to perform two
+							essential tasks. Firstly, we directly supply power to the second network socket (LAN) to
+							activate the camera. Secondly, we step down the 12 V input voltage to 5 V, enabling its
+							utilization for the board's internal components.
+
+							Additionally, we establish connections between the data received from the LAN socket and
+							other sections of the board. This process involves receiving encrypted data, which then gets
+							transferred to the global network for onward transmission to the organization.
+
+							For user convenience and operational debugging, we incorporate 5 LEDs into the system. These
+							LEDs are effectively interfaced with the processor's I2C pins via a PCF8574ap module,
+							allowing them to convey essential information during operation.
 						</p>
 						<p><b>Key Instruments: </b>
-							Arduino IDE, Arduino Uno Board, LEDs, DHT11 Module, BH1750 Module, Relay Module, Lamp,
-							Resistances
+							Altium Designer Software, RJ45 Sockets, LEDs, LM2596 Module, Nano pi
+							r2s Board, 2200W Capacitor, PCF8574ap IC, Switch Button, 220 & 10K Resistances,BC337
+							Transistors,Fuse,SMBJ5.0A TVS,IRF630 Transistor
 
-						</p></p><p><b>Related Images: </b> 
 						</p>
-						<img style="width: 400px; height: 330px;" alt=""
-							src="images/project3.PNG">&nbsp;&nbsp;&nbsp;<img style="width: 400px; height: 330px;" alt=""
-							src="images/project4.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
-							style="width: 400px; height: 330px;" alt=""
-							src="images/project2.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
-							style="width: 400px; height: 330px;" alt="" src="images/project1.PNG">
-					</li>
+						</p>
+						<p><b>Related Images: </b>
+						</p>
+						<body>
+							<div class="main-scroll-div" style="width: 695px; ">
+								<div class="cover">
+									<div class="scroll-images" style="background-color: rgb(255, 255, 255);">
+										<div class="child"><img class="child-img" src="images/project9.PNG" alt="image"></div>
+										<div class="child"><img class="child-img" src="images/project10.PNG" alt="image"></div>
+										<div class="child"><img class="child-img" src="images/project20.jpg" alt="image"></div>
+										<div class="child"><img class="child-img" src="images/project21.png" alt="image"></div>
+									</div>
+								</div>
+							</div>
+						</body>
+						<script >
+							function scrolll() {
+								var left = document.querySelector(".scroll-images");
+								left.scrollBy(350, 0)
+							}
+				
+							function scrollr() {
+								var right = document.querySelector(".scroll-images");
+								right.scrollBy(-350, 0)
+							}
+						</script>
+				</li></li>
 				</ul>
 
-				<hr style=" display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;">
-				<ul>
-					<li style="text-align: left;"><b>Smart Liquid Level Monitoring System with Real-Time
-							Alerts<i>(Microprocessor Lab)</i></b>
-						<p><b>Details: </b> The STM32F0 board was integrated with an Ultrasonic module to transmit
-							height information. Whenever the height fell below a specified limit, the user received
-							immediate notifications through both an LED indicator and an LCD display, effectively
-							alerting them about the low height condition.
-						</p>
-						<p><b>Key Instruments: </b> Keil uVision Software, STM32CubeMx Software, STM32F0 Board, LCD 2*16
-							Ultrasonic Module</p></p><p><b>Related Images: </b> 
-							</p>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 400px; height: 330px;" alt=""
-							src="images/project5.PNG">
-				</ul>
-
-				</li>
-				<hr style=" display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;">
-				<ul>
-					<li style="text-align: left;"><b>Web-Based LED Control and Management with Wemos Mini ESP8266
-							Module<i>(Interface Circiut Lab)</i></b>
-						<p><b>Details: </b> In the Arduino IDE, a user-friendly web page has been crafted, allowing easy
-							control of an LED with the ability to toggle it on and off. The implementation involves
-							utilizing the Wemos mini esp8266 as a wireless access point for seamless communication and
-							efficient LED management. The web page provides a straightforward interface, enabling users
-							to conveniently control the LED's activation and deactivation duration.
-						</p>
-						<p><b>Key Instruments: </b> Arduino IDE, Wemos Mini Esp8266 Module
-						</p></p><p><b>Related Images: </b> 
-						</p>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
-							style="width: 400px; height: 330px;" alt=""
-							src="images/project7.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
-							style="width: 400px; height: 330px;" alt=""
-							src="images/project6.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				</ul>
-
-				</li>
-
-				<ul><hr style=" display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;">
-					<li style="text-align: left;"><b>hardware description for calculating the determinant of matrices
-							with 3 and higher dimensions and software description for calculating the determinant of 1
-							and 2 dimensional matrices<i>(Hardware Software Co-Design)</i></b>
-						<p><b>Details: </b> The software description for calculating determinants of 1 and 2-dimensional
-							matrices involved implementing the relevant codes in the C language. As for the hardware
-							description of determinants for matrices with 3 dimensions and above, a control unit was
-							designed as a Finite State Machine (FSM). Subsequently, this FSM was implemented using
-							Ghezel, along with its corresponding DataPath. This approach allowed for efficient
-							computation and representation of determinants, providing a comprehensive solution for both
-							software and hardware implementations.
-						</p>
-						<p><b>Key Instruments: </b> Dev C++ IDE ,Ghezel Software
-						</p>
-				</ul>
-
-				</li>
-				<!-- <hr
-					style=" display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;">
-				<ul>
-					<li style="text-align: left;"><b>Simulation of an Entrance and an Exit Door
-							Management<i>(Computer Aided Design Tools Lab)</i></b>
-						<p><b>Details: </b>Adjacent to each door, a person detection sensor is positioned, which
-							activates a signal for one hour upon detecting people nearby. The system operates as
-							follows: If someone presses the entrance door button, the door will only open if the total
-							number of people inside is below 15. On the other hand, if a person presses the exit door
-							button and happens to be the sole individual in the room, the door will automatically close
-							upon their exit, leaving the room empty. Throughout the duration when the input door remains
-							open, a signal indicating its open status is set to 1. Conversely, when the output door is
-							closed, a signal indicating its closed status is set to 0. This setup ensures efficient and
-							automated control of the doors based on the number of occupants inside the room.
-						</p>
-						<p><b>Key Instruments: </b> Xilinx ISE Design Software
-						</p>
-				</ul>
-
-				</li> -->
-				<hr
-					style=" display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;">
-				<ul>
-					<li style="text-align: left;"><b>Simulating the Full Automation of a Production
-							Line<i>(Industrial Automation Lab)</i></b>
-						<p><b>Details: </b>In this project, we aim to produce raw materials from two sources: green and
-							blue materials. These materials will be merged using the Pop Up Wheel Sorter, forming a
-							combined path leading to the Machining Center machine. The machine transforms these
-							materials into base or lid components, which are then sent through an output path to the
-							Pick & Place device. This device efficiently separates them by color and directs them into
-							two separate paths for storage. The blue lids and bases are stored using Stacker Crane 2,
-							while Stacker Crane 1 handles the storage of the green lids and bases.
-						</p>
-						<p><b>Key Instruments: </b> Control IO Section of Factory IO Software
-						</p><p><b>Related Images: </b> 
-						</p>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 900px; height: 350px;" alt=""
-							src="images/project8.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				</ul>
-			</section>
 
 		</div>
 
@@ -225,11 +221,11 @@
 				</dl>
 				<!-- <ul class="icons">
 					<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li> -->
-					<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
-					<!-- <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
-					<!-- <li><a href="https://github.com/Mohammad-Aminazadeh" class="icon brands fa-github alt"><span
+				<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
+				<!-- <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
+				<!-- <li><a href="https://github.com/Mohammad-Aminazadeh" class="icon brands fa-github alt"><span
 								class="label">GitHub</span></a></li> -->
-					<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+				<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
 				</ul> -->
 			</section>
 			<!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
