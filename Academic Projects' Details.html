@@ -4,9 +4,6 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-
-
-
 <html>
 
 <head>
@@ -14,114 +11,9 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<!-- <noscript>
+	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript> -->
-
-	<!-- <meta charset="UTF-8"> -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-	<!-- <title>Horizantal scorll bar</title> -->
-	<!-- <link rel="icon" href="2.jpeg"> -->
-	<style>
-		* {
-			margin: -100px;
-			padding: 0px;
-			box-sizing: border-box;
-			/*background-color: rgb(255, 255, 255); */
-		}
-
-		body {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 100%;
-			width: 100%;
-		}
-
-		.main-scroll-div {
-			width: 55%;
-			height: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			/* border: 2px solid red; */
-		}
-
-		.cover {
-			position: relative;
-			width: 154%;
-			height: 0%;
-		}
-
-		.cover::before {
-			position: absolute;
-			content: "";
-			left: 0;
-			top: 0;
-			z-index: 99;
-			height: 0%;
-			width: 0px;
-			background-image: linear-gradient(90deg, rgb(253, 253, 253), transparent);
-		}
-
-		.cover::after {
-			position: absolute;
-			content: "";
-			right: 0;
-			top: 0;
-			z-index: 99;
-			height: 0%;
-			width: 0px; 
-			/* 100 , 180 */
-			background-image: linear-gradient(-90deg, rgb(255, 255, 255), transparent);
-		}
-
-		.scroll-images {
-			width: 100%;
-			height: auto;
-			display: flex;
-			justify-content: left;
-			align-items: center;
-			overflow: auto;
-			position: relative;
-			scroll-behavior: smooth;
-		}
-
-		.child {
-			min-width: 400px;
-			height: 400px;
-			margin: 1px 10px;
-			cursor: pointer;
-			border: 1px solid rgba(207, 201, 201, .3);
-			overflow: hidden;
-		}
-
-		.scroll-images::-webkit-scrollbar {
-			-webkit-appearance: none;
-		}
-
-		.child-img {
-			width: 100%;
-			height: 100%;
-		}
-
-		.icon {
-			color: rgb(153, 41, 147);
-			size: 5px 10px;
-			background-color: rgba(36, 0, 0, 0);
-			font-size: 20px;
-			outline: none;
-			border: none;
-			padding: opx 1px;
-			cursor: pointer;
-		}
-
-		.icon:hover {
-			color: yellow;
-		}
-	</style>
+	</noscript>
 </head>
 
 <body class="is-preload">
@@ -129,11 +21,10 @@
 	<!-- Wrapper -->
 	<div id="wrapper">
 
-		<!-- Header -->
+		<!-- Header -->\
 		<header id="header">
 			<br>
-			<h1 >Academic Projects' Full</h1>
-			<h1>Description and Images</h1><br><br><br>
+			<h1>Academic Projects' Full<br> Description and Images</h1><br><br><br>
 			<!-- <p>Full Autobiography</p> -->
 		</header>
 
@@ -194,44 +85,21 @@
 							Arduino IDE, Arduino Uno Board, LEDs, DHT11 Module, BH1750 Module, Relay Module, Lamp,
 							Resistances
 
+						</p></p><p><b>Related Images: </b> 
 						</p>
-						</p>
-						<p><b>Related Images: </b>
-						</p>
-						<!-- <img style="width: 400px; height: 330px;" alt=""
-							src="images/project3.PNG">&nbsp;&nbsp;&nbsp;<img style="width: 400px; height: 330px;" alt=""
-							src="images/project4.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
-							style="width: 400px; height: 330px;" alt=""
-							src="images/project2.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
-							style="width: 400px; height: 330px;" alt="" src="images/project1.PNG"> -->
-
-							<body>
-								<div class="main-scroll-div" style="width: 695px; ">
-									<div class="cover">
-										<div class="scroll-images" style="background-color: rgb(255, 255, 255);">
-											<div class="child"><img class="child-img" src="images/project3.PNG" alt="image"></div>
-											<div class="child"><img class="child-img" src="images/project4.PNG" alt="image"></div>
-											<div class="child"><img class="child-img" src="images/project2.PNG" alt="image"></div>
-										</div>
-									</div>
-								</div>
-							</body>
-							<script >
-								function scrolll() {
-									var left = document.querySelector(".scroll-images");
-									left.scrollBy(350, 0)
-								}
-					
-								function scrollr() {
-									var right = document.querySelector(".scroll-images");
-									right.scrollBy(-350, 0)
-								}
-							</script>
+						<img style="width: 400px; height: 330px;" alt=""
+							src="images/project3.PNG"></b>
+							<img style="width: 400px; height: 330px;" alt=""
+							src="images/project4.PNG"></b>
+							<img style="width: 400px; height: 330px;" alt=""
+							src="images/project2.PNG"></b>
+							<img style="width: 400px; height: 330px;" alt=""
+							src="images/project1.PNG"></b>
+						
 					</li>
 				</ul>
 
-				<hr
-					style=" display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;">
+				<hr style=" display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;">
 				<ul>
 					<li style="text-align: left;"><b>Smart Liquid Level Monitoring System with Real-Time
 							Alerts<i>(Microprocessor Lab)</i></b>
@@ -241,10 +109,8 @@
 							alerting them about the low height condition.
 						</p>
 						<p><b>Key Instruments: </b> Keil uVision Software, STM32CubeMx Software, STM32F0 Board, LCD 2*16
-							Ultrasonic Module</p>
-						</p>
-						<p><b>Related Images: </b>
-						</p>
+							Ultrasonic Module</p></p><p><b>Related Images: </b> 
+							</p>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -255,8 +121,7 @@
 				</ul>
 
 				</li>
-				<hr
-					style=" display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;">
+				<hr style=" display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;">
 				<ul>
 					<li style="text-align: left;"><b>Web-Based LED Control and Management with Wemos Mini ESP8266
 							Module<i>(Interface Circiut Lab)</i></b>
@@ -267,44 +132,18 @@
 							to conveniently control the LED's activation and deactivation duration.
 						</p>
 						<p><b>Key Instruments: </b> Arduino IDE, Wemos Mini Esp8266 Module
-						</p>
-						</p>
-						<p><b>Related Images: </b>
+						</p></p><p><b>Related Images: </b> 
 						</p>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
 							style="width: 400px; height: 330px;" alt=""
 							src="images/project7.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
 							style="width: 400px; height: 330px;" alt=""
 							src="images/project6.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<!-- 							
-							<body>
-								<div class="main-scroll-div" style="width: 695px; ">
-									<div class="cover">
-										<div class="scroll-images" style="background-color: rgb(255, 255, 255);">
-											<div class="child"><img class="child-img" src="images/project7.PNG" alt="image"></div>
-											<div class="child"><img class="child-img" src="images/project6.PNG" alt="image"></div>
-										</div>
-									</div>
-								</div>
-							</body> -->
-							<!-- <script >
-								function scrolll() {
-									var left = document.querySelector(".scroll-images");
-									left.scrollBy(350, 0)
-								}
-					
-								function scrollr() {
-									var right = document.querySelector(".scroll-images");
-									right.scrollBy(-350, 0)
-								}
-							</script> -->
 				</ul>
 
 				</li>
 
-				<ul>
-					<hr
-						style=" display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;">
+				<ul><hr style=" display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;">
 					<li style="text-align: left;"><b>hardware description for calculating the determinant of matrices
 							with 3 and higher dimensions and software description for calculating the determinant of 1
 							and 2 dimensional matrices<i>(Hardware Software Co-Design)</i></b>
@@ -318,88 +157,9 @@
 						</p>
 						<p><b>Key Instruments: </b> Dev C++ IDE ,Ghezel Software
 						</p>
-
-
-						<body>
-							<div class="main-scroll-div" style="width: 695px; box-sizing: content-box; ">
-								<div class="cover">
-									<div class="scroll-images" style="background-color: rgb(255, 255, 255);">
-										<div class="child"><img class="child-img" src="images/project11.PNG" alt="image"></div>
-										<div class="child"><img class="child-img" src="images/project12.PNG" alt="image"></div>
-										<div class="child"><img class="child-img" src="images/project13.PNG" alt="image"></div>
-										<div class="child"><img class="child-img" src="images/project14.PNG" alt="image"></div>
-										<div class="child"><img class="child-img" src="images/project15.PNG" alt="image"></div>
-										<div class="child"><img class="child-img" src="images/project16.PNG" alt="image"></div>
-										<div class="child"><img class="child-img" src="images/project17.PNG" alt="image"></div>
-										<div class="child"><img class="child-img" src="images/project18.jpg" alt="image"></div>
-										<div class="child"><img class="child-img" src="images/project19.jpg" alt="image"></div>
-									</div>
-								</div>
-							</div>
-						</body>
-						<script >
-							function scrolll() {
-								var left = document.querySelector(".scroll-images");
-								left.scrollBy(350, 0)
-							}
-				
-							function scrollr() {
-								var right = document.querySelector(".scroll-images");
-								right.scrollBy(-350, 0)
-							}
-						</script>
-
-						<!-- <head>
-					<title>Horizontal Scrolling Gallery</title>
-					<link rel="stylesheet" type="text/css" href="gallery.css">
-				</head>
-
-				<body>
-					<div class="gallery-container">
-						<div class="gallery">
-							<img src="images/project6.PNG" alt="Image 1">
-							<img src="images/project7.PNG" alt="Image 2">
-							<img src="images/project8.PNG" alt="Image 3">
-							/
-						</div>
-					</div>
-
-					<script src="gallery.js"></script>
-				</body> -->
-						<!-- <div class="scroll-container">
-					<img src="images/project6.PNG" alt="Image 1">
-							<img src="images/project7.PNG" alt="Image 2">
-							<img src="images/project8.PNG" alt="Image 3">
-				  </div> -->
 				</ul>
+
 				</li>
-				<!-- The grid: four columns -->
-				<!-- <div class="row">
-					<div class="column">
-						<img src="images/project6.PNG" alt="Nature" onclick="myFunction(this);">
-					</div>
-					<div class="column">
-						<img src="images/project7.PNG" alt="Snow" onclick="myFunction(this);">
-					</div>
-					<div class="column">
-						<img src="images/project8.PNG" alt="Mountains" onclick="myFunction(this);">
-					</div>
-					<div class="column">
-						<img src="images/project9.PNG" alt="Lights" onclick="myFunction(this);">
-					</div>
-				</div> -->
-
-				<!-- The expanding image container -->
-				<div class="container">
-					<!-- Close the image -->
-					<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-					<!-- Expanded image -->
-					<img id="expandedImg" style="width:100%">
-
-					<!-- Image text -->
-					<div id="imgtext"></div>
-				</div>
 				<!-- <hr
 					style=" display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;">
 				<ul>
@@ -434,8 +194,7 @@
 							while Stacker Crane 1 handles the storage of the green lids and bases.
 						</p>
 						<p><b>Key Instruments: </b> Control IO Section of Factory IO Software
-						</p>
-						<p><b>Related Images: </b>
+						</p><p><b>Related Images: </b> 
 						</p>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 900px; height: 350px;" alt=""
 							src="images/project8.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -444,10 +203,9 @@
 
 		</div>
 
-</html>
-<!-- Footer -->
-<footer id="footer">
-	<!-- <section>
+		<!-- Footer -->
+		<footer id="footer">
+			<!-- <section>
 				<h2 style="font-family:'Times New Roman', Times, serif">Through various chances, through all
 					vicissitudes, we make our way ....</h2>
 				<p>Aeneid</p>
@@ -455,41 +213,41 @@
 					<li><a href="generic.html" class="button">Learn More</a></li>
 				</ul>
 			</section> -->
-	<section>
-		<h2>Contact Info</h2>
-		<dl class="alt">
-			<!-- <dt>Address</dt>
+			<section>
+				<h2>Contact Info</h2>
+				<dl class="alt">
+					<!-- <dt>Address</dt>
 					<dd>Department of Computer Science/Engineering &bull; University of Isfahan &bull; Daneshgah Street &bull; Isfahan &bull; IRAN</dd> -->
-			<dt>Email</dt>
-			<dd>hadisganji4578@gmail.com</dd>
-			<dt>SkypeID</dt>
-			<dd>live:.cid.6e9a0769c81f4c7b</dd>
-			<dt>Phone</dt>
-			<dd>(+98) 918-4318309</dd>
+					<dt>Email</dt>
+					<dd>hadisganji4578@gmail.com</dd>
+					<dt>SkypeID</dt>
+					<dd>live:.cid.6e9a0769c81f4c7b</dd>
+					<dt>Phone</dt>
+					<dd>(+98) 918-4318309</dd>
 
-		</dl>
-		<!-- <ul class="icons">
+				</dl>
+				<!-- <ul class="icons">
 					<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li> -->
-		<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
-		<!-- <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
-		<!-- <li><a href="https://github.com/Mohammad-Aminazadeh" class="icon brands fa-github alt"><span
+					<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
+					<!-- <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
+					<!-- <li><a href="https://github.com/Mohammad-Aminazadeh" class="icon brands fa-github alt"><span
 								class="label">GitHub</span></a></li> -->
-		<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+					<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
 				</ul> -->
-	</section>
-	<!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
-</footer>
+			</section>
+			<!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
+		</footer>
 
-</div>
+	</div>
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
 </body>
 

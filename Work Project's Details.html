@@ -11,114 +11,9 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<!-- <noscript>
+	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript> -->
-
-	<!-- <meta charset="UTF-8"> -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-	<!-- <title>Horizantal scorll bar</title> -->
-	<!-- <link rel="icon" href="2.jpeg"> -->
-	<style>
-		* {
-			margin: -100px;
-			padding: 0px;
-			box-sizing: border-box;
-			/*background-color: rgb(255, 255, 255); */
-		}
-
-		body {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 100%;
-			width: 100%;
-		}
-
-		.main-scroll-div {
-			width: 55%;
-			height: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			/* border: 2px solid red; */
-		}
-
-		.cover {
-			position: relative;
-			width: 154%;
-			height: 0%;
-		}
-
-		.cover::before {
-			position: absolute;
-			content: "";
-			left: 0;
-			top: 0;
-			z-index: 99;
-			height: 0%;
-			width: 0px;
-			background-image: linear-gradient(90deg, rgb(253, 253, 253), transparent);
-		}
-
-		.cover::after {
-			position: absolute;
-			content: "";
-			right: 0;
-			top: 0;
-			z-index: 99;
-			height: 0%;
-			width: 0px; 
-			/* 100 , 180 */
-			background-image: linear-gradient(-90deg, rgb(255, 255, 255), transparent);
-		}
-
-		.scroll-images {
-			width: 100%;
-			height: auto;
-			display: flex;
-			justify-content: left;
-			align-items: center;
-			overflow: auto;
-			position: relative;
-			scroll-behavior: smooth;
-		}
-
-		.child {
-			min-width: 400px;
-			height: 400px;
-			margin: 1px 10px;
-			cursor: pointer;
-			border: 1px solid rgba(207, 201, 201, .3);
-			overflow: hidden;
-		}
-
-		.scroll-images::-webkit-scrollbar {
-			-webkit-appearance: none;
-		}
-
-		.child-img {
-			width: 100%;
-			height: 100%;
-		}
-
-		.icon {
-			color: rgb(153, 41, 147);
-			size: 5px 10px;
-			background-color: rgba(36, 0, 0, 0);
-			font-size: 20px;
-			outline: none;
-			border: none;
-			padding: opx 1px;
-			cursor: pointer;
-		}
-
-		.icon:hover {
-			color: yellow;
-		}
-	</style>
+	</noscript>
 </head>
 
 <body class="is-preload">
@@ -129,7 +24,7 @@
 		<!-- Header -->
 		<header id="header">
 			<br>
-			<h1>Work Project's Full</h1> <h1>Description and Images</h1><br><br><br>
+			<h1>Work Project's Full<br> Description and Images</h1><br><br><br>
 			<!-- <p>Full Autobiography</p> -->
 		</header>
 
@@ -139,60 +34,69 @@
 			<!-- Content -->
 			<section id="content" class="main">
 				<span class="image main"><img src="images/Capture4.PNG" alt="" /></span>
-				
+				<!-- <h2>Before University</h2>
+				<p>I was Born in 1999 in Khomin, Markazi Province, Iran. I had the opportunity to showcase my
+					exceptional
+					talents during high school by successfully passing the entrance exam of the <strong>National Organization
+					for Development of Exceptional Talents</strong> (commonly known as SAMPAD). As a result, I earned my math and
+					physics diploma from this
+					distinguished institution, achieving an impressive score of 17.20 out of 20. Subsequently, I
+					successfully passed the entrance exam for the <a href="https://ui.ac.ir/EN">University of
+						Isfahan.</a>, one of Iran's prestigious state-funded
+					universities, where I pursued my studies in the field of computer engineering.
+				</p>
+
+
+				<h2>My Bachelor's Journey</h2>
+				<p>During the process of selecting my university field, I lacked a clear and accurate understanding of
+					the available options. Consequently, I made a decision based on an incomplete view of the fields and
+					the job market prospects after graduation, leading me to choose computer engineering. However, upon
+					entering the university, I didn't feel a strong interest in this field, and I found myself grappling
+					with confusion about my true passions.It was not until I discovered the specialization of computer
+					architecture that I finally found my
+					genuine interest and enthusiasm. From that point on, everything changed. I became deeply engaged and
+					motivated, which resulted in achieving exceptional grades in all the specialized courses related to
+					this field.</p>
+
+				<h2>Other Interests and Hobbies</h2>
+				<p>From my earliest memories, I have been encouraged by the continuous support of my parents to engage
+					in various non-academic activities, which allowed me to lead a well-rounded life alongside my
+					studies. Among these activities, art played an important role, and I thoroughly enjoyed attending
+					classes on oil painting and calligraphy. Additionally, I also explored my interests in sports,
+					participating in classes for karate, swimming, and volleyball.<br>I initially started with swimming, and as I delved into the sport, I found a genuine interest in it.
+					Later, I decided to pursue volleyball more seriously. These choices brought about several
+					achievements at the provincial, national, and collegiate levels in both sports. These experiences
+					have positively impacted my life, instilling qualities like discipline, perseverance, and a drive
+					for excellence that have shaped my character and approach to challenges.</p> -->
 				<ul>
 					<li style="text-align: left;"><b>Designing a board to support Power on Ethernet (PoE) for setting
-							up surveillance cameras and providing information about the product's operational
-							status.</b>
-						<p><b>Details: </b>In this project, we begin by receiving power and network data through a
-							network socket (WAN port). Subsequently, we carefully separate these inputs to perform two
-							essential tasks. Firstly, we directly supply power to the second network socket (LAN) to
-							activate the camera. Secondly, we step down the 12 V input voltage to 5 V, enabling its
-							utilization for the board's internal components.
+						up surveillance cameras and providing information about the product's operational
+						status.</b>
+					<p><b>Details: </b>In this project, we begin by receiving power and network data through a
+						network socket (WAN port). Subsequently, we carefully separate these inputs to perform two
+						essential tasks. Firstly, we directly supply power to the second network socket (LAN) to
+						activate the camera. Secondly, we step down the 12 V input voltage to 5 V, enabling its
+						utilization for the board's internal components.
 
-							Additionally, we establish connections between the data received from the LAN socket and
-							other sections of the board. This process involves receiving encrypted data, which then gets
-							transferred to the global network for onward transmission to the organization.
+						Additionally, we establish connections between the data received from the LAN socket and
+						other sections of the board. This process involves receiving encrypted data, which then gets
+						transferred to the global network for onward transmission to the organization.
 
-							For user convenience and operational debugging, we incorporate 5 LEDs into the system. These
-							LEDs are effectively interfaced with the processor's I2C pins via a PCF8574ap module,
-							allowing them to convey essential information during operation.
+						For user convenience and operational debugging, we incorporate 5 LEDs into the system. These
+						LEDs are effectively interfaced with the processor's I2C pins via a PCF8574ap module,
+						allowing them to convey essential information during operation.
 						</p>
 						<p><b>Key Instruments: </b>
 							Altium Designer Software, RJ45 Sockets, LEDs, LM2596 Module, Nano pi
 							r2s Board, 2200W Capacitor, PCF8574ap IC, Switch Button, 220 & 10K Resistances,BC337
 							Transistors,Fuse,SMBJ5.0A TVS,IRF630 Transistor
 
+						</p></p><p><b>Related Images: </b> 
 						</p>
-						</p>
-						<p><b>Related Images: </b>
-						</p>
-						<body>
-							<div class="main-scroll-div" style="width: 695px; ">
-								<div class="cover">
-									<div class="scroll-images" style="background-color: rgb(255, 255, 255);">
-										<div class="child"><img class="child-img" src="images/project9.PNG" alt="image"></div>
-										<div class="child"><img class="child-img" src="images/project10.PNG" alt="image"></div>
-										<div class="child"><img class="child-img" src="images/project20.jpg" alt="image"></div>
-										<div class="child"><img class="child-img" src="images/project21.png" alt="image"></div>
-									</div>
-								</div>
-							</div>
-						</body>
-						<script >
-							function scrolll() {
-								var left = document.querySelector(".scroll-images");
-								left.scrollBy(350, 0)
-							}
+						
+					</li>
 				
-							function scrollr() {
-								var right = document.querySelector(".scroll-images");
-								right.scrollBy(-350, 0)
-							}
-						</script>
-				</li></li>
-				</ul>
-
+			</section>
 
 		</div>
 
@@ -221,11 +125,11 @@
 				</dl>
 				<!-- <ul class="icons">
 					<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li> -->
-				<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
-				<!-- <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
-				<!-- <li><a href="https://github.com/Mohammad-Aminazadeh" class="icon brands fa-github alt"><span
+					<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
+					<!-- <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
+					<!-- <li><a href="https://github.com/Mohammad-Aminazadeh" class="icon brands fa-github alt"><span
 								class="label">GitHub</span></a></li> -->
-				<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+					<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
 				</ul> -->
 			</section>
 			<!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
